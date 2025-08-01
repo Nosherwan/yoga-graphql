@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    // Strict Type Checking
+    "strict": true, // Enable all strict type checking options
+    "noImplicitAny": false, // Raise error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true, // Enable strict null checks
+    "strictFunctionTypes": true, // Enable strict checking of function types
+    "strictBindCallApply": true, // Enable strict 'bind', 'call', and 'apply' methods on functions
+
+    // Module Resolution
+    "module": "NodeNext", // Updated from commonjs for modern Node.js
+    "moduleResolution": "NodeNext", // Updated from node for modern Node.js
+    "target": "ES2022", // More specific than esnext, targets Node.js 20
+    "lib": ["ES2022"], // More specific than esnext
+
+    // Project Options
+    "outDir": "dist", // Changed from .build to more conventional dist
+    "rootDir": "src", // Explicitly set source root
+    "sourceMap": true, // Generates corresponding .map files
+    "declaration": true, // Generates corresponding .d.ts files
+    "declarationMap": true, // Generates sourcemaps for d.ts files
+
+    // Decorator Support
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // Import Options
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // Additional Checks
+    "noUnusedLocals": false, // Report errors on unused locals
+    "noUnusedParameters": false, // Report errors on unused parameters
+    "noImplicitReturns": true, // Report error when not all code paths in function return a value
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+
+    // Skip type checking of declaration files
+    "skipLibCheck": true, // Skip type checking of declaration files
+
+    // Ensure JavaScript files are included in your compilation
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": true // Report errors in .js files
+  },
+  "include": ["src/**/*", "declarations.d.ts"],
+  "exclude": [
+    "node_modules",
+    "dist", // Changed from .build
+    "**/*.test.ts", // Exclude test files
+    "**/*.spec.ts", // Exclude test files
+    ".vscode",
+    "coverage" // Exclude coverage reports
+  ]
+}

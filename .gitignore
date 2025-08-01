@@ -1,0 +1,36 @@
+# files
+# macOS
+.DS_Store
+.env*
+.vscode
+*.log
+
+# package directories
+node_modules
+jspm_packages
+.build
+logs
+coverage
+
+# Serverless directories
+.serverless
+
+# Webpack directories
+.webpack
+
+# Windows
+desktop.ini
+
+# Project
+server/built
+ui/dist
+id_rsa
+.cache
+db
+
+# Package manager nonsense
+yarn-error.log
+npm-debug.log*
+package-lock.json
+db/*.sqlite
+db/*.sqlite-*

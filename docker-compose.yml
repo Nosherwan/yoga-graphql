@@ -1,0 +1,21 @@
+# This is used to run docker on the local computer
+# currently only used to run a local db instance of postgresql
+version: '3.2'
+services:
+  db:
+    image: postgres:14.4
+    restart: always
+    environment:
+      # default user: postgres
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: only-db
+      TZ: 'Australia/Sydney'
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    volumes:
+      # create a .db folder inside the main (only-postgresql) folder
+      # this will keep your local db
+      - ./db:/var/lib/postgresql/data
