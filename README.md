@@ -1,5 +1,12 @@
 # Yoga GraphQL Server
 
+[![Yoga Server](https://img.shields.io/badge/Yoga-Server-blue?logo=graphql)](https://the-guild.dev/graphql/yoga-server)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)](https://www.postgresql.org/)
+[![Knex](https://img.shields.io/badge/Knex.js-QueryBuilder-orange?logo=knex)](https://knexjs.org/)
+[![Mailgun](https://img.shields.io/badge/Mailgun-Email-red?logo=mailgun)](https://www.mailgun.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-14%2B-green?logo=node.js)](https://nodejs.org/)
+
 A GraphQL server implementation using Yoga Server with TypeScript, PostgreSQL.
 
 ## Features
